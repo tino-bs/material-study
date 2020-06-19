@@ -6,8 +6,8 @@
   "author": "borek.digital",
   "license": "MIT",
   "scripts": {
-    "dev:study": "vuepress dev study",
-    "build:study": "vuepress build study"
+    "start": "vuepress dev",
+    "build": "vuepress build"
   },
   "devDependencies": {
     "vuepress": "^1.5.2",
