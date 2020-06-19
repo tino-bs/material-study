@@ -1,4 +1,4 @@
-const { description, repository } = require('../../package.json')
+const { description } = require('../../package.json')
 
 module.exports = {
   title: 'MDM / Design-Studie',
@@ -8,6 +8,7 @@ module.exports = {
   ],
   patterns: ['**/*.md', '!**/node_modules'],
   plugins: ['vuepress-plugin-medium-zoom'],
+  base: '/material-study/',
   themeConfig: {
     // GitHub-Repo is default
     repo: 'tino-bs/material-study',
