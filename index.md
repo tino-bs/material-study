@@ -11,6 +11,8 @@ Wozu kann diese Studie dienen:
 * Nachschlagewerk
 * Dokumentation
 
+![Preview](./.vuepress/public/assets/preview.jpg)
+
 ## Design Grundlagen
 Das auf Material Design basierende Konzept zielt darauf ab, ein markengerechtes, inhaltsorientiertes Erlebnis zu schaffen.
 
@@ -29,18 +31,24 @@ Die Produktarchitektur von MDM Web-Anwendungen ist in einer Katalog-Struktur org
 Eine Katalog-Struktur ermöglicht es den Benutzern, schnell zu einem Interessengebiet zu navigieren. Dropdowns und Sidebar-Navigationen eignen sich ideal zum Navigieren durch eine Katalog-Struktur, weshalb die Anwendungen diese Komponenten verwenden.
 
 ### Navigation
+Die Navigation ist das Herzstück der MDM Web-Anwendungen. Sie soll klar erkennbar sein und Nutzern jederzeit den Zugang zu jedem Bereich der Seite ermöglichen. Dabei muss die Benennung der Navigationspunkte auch von einem Laien klar verständlich sein. Ein weiterer wichtiger Aspekt ist die Anzahl der aufgeführten Hauptkategorien. Als Leitlinie gilt: 5-7 Punkte sind für das menschliche Auge gut zu scannen und können vom Gehirn gut verarbeitet werden. 
+Gibt es Unterkategorien, können diese durch ein Submenü dargestellt werden, um tiefer in einen Bereich einzutauchen. Trotzdem sollte es möglich sein den Hauptnavigationspunkt auszuwählen und dann eine Übersichtsseite anzuzeigen, die alle Themen der Unterpunkte aufgreift, weil viele Nutzer mit der Anzahl und Funktion eines Submenüs überfordert sind. 
 
 ### Branding Moment
+Das Branding soll sich konsistent durch alle Berührungspunkt mit der Marke durchziehen. (Print, E-Mail, Website). Dabei kann es sich um bestimmte Farben handeln, die überall gleich Anwendung finden, sowie die Einbindung des Logos. Einheitliches Wording über alle Web-Anwendungen hinweg ist ebenfalls ein wichtiger Aspekt bei der Unterstützung der Markenbildung.
+
+Erfolgreiches Branding beinhaltet auch gute User Experience. Funktioniert die Webseite gut, werden Hilfestellungen gegeben und ist die Ansprache angenehm, dann ist es sehr wahrscheinlich, dass Nutzer das positive Erlebnis im Kopf behalten und wiederkommen.  
+Das bezieht sich auch auf die Marketingmails nach einer Bestellung. Ist dort eine zu hohe werbliche Frequenz, sind die Nutzer genervt und fühlen sich verfolgt, was zu einer schlechten User Experience führt und einer hohen unsubscribe Rate.  
+Kurz gesagt: die richtigen Inhalte zur richtigen Zeit in der richtigen Menge. 
 
 ### Suche
+Eine ausführlichere Darstellung der Suche wird in Kürze [hier](./components.md) zu finden sein.
 
 ## Typografie
+Durch Typografie kann ein Branding der Marke entstehen. Im Falle von MDM ist die Hausschrift im Logo die Optima. Diese wird in weiteren Bereichen der Webseite aufgegriffen, um einen Wiedererkennungseffekt zu haben. Dabei wird darauf zu geachtet, dass die Schrift auch auf kleinen Endgeräten gut lesbar ist (Laufweite, Serifen, etc.). Optima wird daher nur für Headlines verwendet. 
 
 ### Schriftarten
 MDM Web-Anwendungen benutzen die Schriftarten Source Sans Pro und Optima.
-
-### Schriftgrößen
-Schriftgrößen basieren auf der [Material Design type specification](https://material.io/design/typography/the-type-system.html#type-scale)
 
 #### Source Sans Pro
 Source Sans Pro ist eine serifenlose Schriftart von Paul D. Hunt für Adobe und ist eine Interpretation und Erweiterung der Franklin Gothic. Obwohl die Franklin Gothic ursprünglich für die Verwendung als Displayschrift geschnitten wurde, ist sie auch in kleinen Größen gut lesbar. Ihre verschiedenen Gewichtungen machen es leicht, eine typografische Hierarchie aufzubauen.
@@ -54,18 +62,27 @@ Optima  wurde als eine serifenlose Schriftart entworfen, die auf dem Bildschirm 
 ![Optima Sample](./.vuepress/public/assets/optima-sample.png)
 _(Quelle: wikipedia.org)_
 
+### Schriftgrößen
+Schriftgrößen basieren auf der [Material Design type specification](https://material.io/design/typography/the-type-system.html#type-scale)
+
 ## Ikonografie
 MDM Web-Anwendungen verfolgt den Ansatz, erkennbare, funktionale Icons zu verwenden, die keine individuellen, unterscheidbaren Merkmale oder Verzierungen aufweisen. Dadurch, dass den Icons kein Branding oder eindeutiger Stil verliehen wird, können sie mit jedem beliebigen Inhalt in jedem beliebigen Ton gepaart werden und nicht mit dem Stil dieses Inhalts in Konflikt geraten.
 
 Eine vollständige Liste der verfügbaren Icons [gibt es hier](https://materialdesignicons.com)
 
 ## Farben
+Die maßgebliche Hintergrundfarbe von MDM Web-Anwendungen ist Weiß. Sie verwendet eine Graustufen-Farbpalette, sodass die Produktbilder in den Shops hervorstechen und die Produkttexte ohne Ablenkung gut lesbar sind.
 
-#### Primärfarbe
-Die Primärfarbe von MDM Web-Anwendungen ist Weiß. Sie verwendet eine Graustufen-Farbpalette, sodass die Produktbilder in den Shops hervorstechen und die Produkttexte ohne Ablenkung gut lesbar sind.
+#### Primäre Akzentfarbe
+Die primäre Akzentfarbe von MDM Web-Anwendungen ist Rot. Sie wird sparsam verwendet, um sicherzustellen, dass sie an den Orten, an denen sie erscheint, eine hohe Wirkung erzielt, beispielsweise für die Primären Buttons `In den Warenkorb` oder `Kaufen`.
 
-#### Sekundärfarbe
-Die Sekundärfarbe ist Blau. Sie wird sparsam verwendet, um sicherzustellen, dass sie an den Orten, an denen sie erscheint, eine hohe Wirkung erzielt.
+#### Sekundäre Akzentfarbe
+Die sekundäre Akzentfarbe ist Blau und wird hauptsächlich für untergeordnete klickbare Elemente verwendet, wie z.B. den sekundären Button `Newsletter abonnieren`
+
+#### Weitere Farben
+Die weiteren Farben für beispielsweise Auszeichnungen, Erfolgs- und Fehlermeldungen orientieren sich an den Farbprinzipen von Material Design.
+![Preview](./.vuepress/public/assets/colors.png)
+
 
 ## Layout
 
